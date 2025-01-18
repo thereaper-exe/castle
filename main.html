@@ -1,0 +1,68 @@
+	<!-- This is an Analogue of SCAREDZONE [link to scaryzone bit.ly/scaredzone] -->
+	<!-- Developed by TheReaper.exe [github.com/thereaper-exe ; instagram.com/thereaper.exe ; discord - @scowy.php] -->
+	<!-- In this project I prefer to use Tailwind and ExpressJS. But it can't be did by me :( -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Castle of Reapers</title>
+	<link rel="stylesheet" type="text/css" href="./css/design.css"> <!-- Link to custom CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/particles.css"> <!-- Link to Particles CSS -->
+</head>
+<body>
+	<!-- Overlay -->
+	<div id="overlay" onclick="removeOverlay()">
+		<p class="glitch" style="margin-top: 5px auto; color: white; font-size: 16px">Click To Enter</p>
+	</div>
+
+	<!-- Audio -->
+	<audio id="audio" src="./music/scaryzone.mp3" loop style="display: none;"></audio>
+
+	<!-- Logo -->
+	<div class="blink" style="margin-bottom: -16px">
+		<!-- <p id="Japanese-Logo">死神たちの城</p> -->
+		<img src="./images/logotype.png" id="Japanese-Logo">
+	</div>
+
+	<!-- Bar -->
+	<div class="content">
+		<span>
+			[ ---------- <span id="flickering-text">XXX</span> -------------------------------- <span id="flickering-text">Information</span> -------------------------------- <span id="flickering-text">XXX</span> ---------- ]
+			<p class="welcome-text-part-1">
+				<img src="./icons/ak_47_right.png" style="width: 32px; height: 32px;">
+				The Castle Of Reapers looms over a forsaken land, casting shadows that chill the soul.
+				<img src="./icons/flag_both.png" style="width: 32px; height: 32px;">
+			</p>
+			<p class="welcome-text-part-2">
+				<img src="./icons/m4a1_right.png" style="width: 32px; height: 32px;">
+				Our one chilling mantra: "Enter at your own peril, for the Reapers never forgive." <span style="color: red;">Beware, traveler.</span>
+				<img src="./icons/pistol-right.png" style="width: 32px; height: 32px; margin-top: 5px">
+			</p>
+		[ ---------- <span id="flickering-text">XXX</span> ----------------------- <span id="flickering-text">thereaper.exe or thereaper.lua?</span> --------------------- <span id="flickering-text">XXX</span> ---------- ]
+		</span>
+	</div>
+	
+	<!-- Main Container -->
+	<div class="container">
+		<div class="members">
+			<div class="member">
+				<img src="./images/reaper.jpg" alt="Thereaper.exe" class="member-photo">
+        <p id="username"><a href=# onclick="showMember('Arterial')">@Arterial</a> <!--[<a href="https://t.me/theywantsex">t.me/@cvtch</a>] --></p>
+			</div>
+			<div class="member">
+				<img src="./images/attack.jpg" alt="mem2" class="member-photo">
+        <p id="username"><a href=# onclick="showMember('Reaper')">@Reaper</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Particles -->
+
+	<!-- Footer -->
+	 <div class="footer">
+  <p>© 2025 The Castle of Reapers. All rights reserved.</p>
+</div>
+</body>
+<script src="./javascript/main.js"></script>
+</html>

@@ -1,0 +1,306 @@
+/* CSS MADE BY THEREAPER AND HADARI */
+/* DO NOT COPYRIGHT THIS PLEASE */
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: black;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --scary-red: #961a00;
+  --custom-gray: #cfcfcf;
+  --custom-hover: #941c1c;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  user-select: none;
+}
+
+@font-face {
+  font-family: "AdobeSongStdL";
+  src: url("../fonts/AdobeSongStd-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TopazPlus";
+  src: url("../fonts/TopazPlus.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CascadiaMonoSemiBold";
+  src: url("../fonts/CascadiaMonoPL-SemiBold.otf") format("opentype");
+}
+
+#Japanese-Logo {
+  color: #fff;
+  font-family: "AdobeSongStdL";
+  font-weight: 500;
+  font-size: 170px;
+  line-height: 1.2;
+  margin: 20px auto;
+  animation: flicker-text 6s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  letter-spacing: 10px;
+}
+
+@keyframes flicker-text {
+  0%, 18%, 22%, 25%, 53%, 57%, 72%, 75%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55%, 73% {
+    opacity: 0;
+  }
+}
+
+.content {
+  text-align: left;
+  margin: 0px auto;
+  width: 890px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  display: flex;
+  flex-direction: column;
+  color: var(--custom-gray);
+  font-family: "TopazPlus";
+}
+
+.welcome-text-part-1,
+.welcome-text-part-2 {
+  margin-bottom: 20px;
+}
+
+@keyframes brokenFlicker {
+  0%, 20%, 22%, 29%, 35%, 76%, 81%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 2px #f0b7c8, 0 0 4px #f0b7c8, 0 0 6px #f0b7c8;
+  }
+  15%, 25%, 29%, 58% {
+    opacity: 0.7;
+    text-shadow: none;
+  }
+  22%, 63% {
+    opacity: 0.85;
+    text-shadow: 0 0 1px #f0b7c8, 0 0 2px #f0b7c8, 0 0 3px #f0b7c8;
+  }
+}
+
+#flickering-text {
+  animation: brokenFlicker 0.01s infinite;
+  color: #f6d0db;
+}
+
+.container {
+  text-align: left;
+  margin: 0px auto;
+  width: 890px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  display: flex;
+  flex-direction: column;
+  color: var(--custom-gray);
+  font-family: "TopazPlus";
+  margin-top: 15px;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  flex: 0 1 calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.member-photo {
+  width: 128px;
+  height: 128px;
+  user-select: none;
+  margin-right: 10px;
+  opacity: 0.8;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.member-photo:hover {
+  opacity: 1;
+}
+
+.username {
+  color: white;
+}
+
+a {
+  color: var(--custom-gray);
+}
+
+a:hover {
+  color: #f6d0db;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-0.5px, 0.5px);
+  }
+  20% {
+    transform: translate(-0.5px, -0.5px);
+  }
+  30% {
+    transform: translate(0.5px, 0.5px);
+  }
+  40% {
+    transform: translate(0.5px, -0.5px);
+  }
+  50% {
+    transform: translate(-0.5px, 0.5px);
+  }
+  60% {
+    transform: translate(-0.5px, -0.5px);
+  }
+  70% {
+    transform: translate(0.5px, 0.5px);
+  }
+  80% {
+    transform: translate(0.5px, -0.5px);
+  }
+  90% {
+    transform: translate(-0.5px, 0.5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.glitch {
+  animation: glitch 0.05s infinite;
+}
+
+.custom-link {
+  color: rgb(131, 131, 131);
+  transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+  color: rgb(0, 217, 255);
+  text-decoration: underline;
+}
+
+.transparent-button {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.transparent-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: rgb(0, 0, 0);
+  transform: scale(1.05);
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.301);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+  font-family: "CascadiaMonoSemiBold";
+}
+
+@media (max-width: 1024px) {
+  #Japanese-Logo {
+    font-size: 100px;
+    letter-spacing: 5px;
+  }
+
+  .content, .container {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    position: relative;
+    left: 275px;
+  }
+
+  .member-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Japanese-Logo {
+    font-size: 80px;
+    letter-spacing: 2px;
+  }
+
+  .content, .container {
+    width: 90%;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+
+  .members {
+    gap: 10px;
+  }
+
+  .member {
+    flex: 0 1 100%;
+  }
+
+  .member-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .transparent-button {
+    padding: 8px 16px;
+  }
+}
